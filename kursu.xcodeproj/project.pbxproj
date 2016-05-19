@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7471CE841CEDB916008378F4 /* MainViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7471CE831CEDB916008378F4 /* MainViewTableViewCell.swift */; };
 		74CE53901CED9AC4007AD826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CE538F1CED9AC4007AD826 /* AppDelegate.swift */; };
 		74CE53951CED9AC4007AD826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CE53931CED9AC4007AD826 /* Main.storyboard */; };
 		74CE53971CED9AC4007AD826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CE53961CED9AC4007AD826 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7471CE831CEDB916008378F4 /* MainViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewTableViewCell.swift; sourceTree = "<group>"; };
 		74CE538C1CED9AC4007AD826 /* kursu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kursu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CE538F1CED9AC4007AD826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74CE53941CED9AC4007AD826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		74CE538E1CED9AC4007AD826 /* kursu */ = {
 			isa = PBXGroup;
 			children = (
+				7471CE831CEDB916008378F4 /* MainViewTableViewCell.swift */,
 				74CE53C31CED9E80007AD826 /* Controllers */,
 				74CE538F1CED9AC4007AD826 /* AppDelegate.swift */,
 				74CE53931CED9AC4007AD826 /* Main.storyboard */,
@@ -130,8 +133,8 @@
 		74CE53C31CED9E80007AD826 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				74CE53BF1CED9D15007AD826 /* MainViewController.swift */,
 				74CE53BD1CED9C5B007AD826 /* TabBarViewController.swift */,
+				74CE53BF1CED9D15007AD826 /* MainViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74CE53BE1CED9C5B007AD826 /* TabBarViewController.swift in Sources */,
+				7471CE841CEDB916008378F4 /* MainViewTableViewCell.swift in Sources */,
 				74CE53901CED9AC4007AD826 /* AppDelegate.swift in Sources */,
 				74CE53C01CED9D15007AD826 /* MainViewController.swift in Sources */,
 			);
@@ -494,6 +498,7 @@
 				74CE53B61CED9AC5007AD826 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74CE53B71CED9AC5007AD826 /* Build configuration list for PBXNativeTarget "kursuTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +507,7 @@
 				74CE53B91CED9AC5007AD826 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74CE53BA1CED9AC5007AD826 /* Build configuration list for PBXNativeTarget "kursuUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +516,7 @@
 				74CE53BC1CED9AC5007AD826 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

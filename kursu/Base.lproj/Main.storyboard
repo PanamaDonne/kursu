@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ahz-sg-Lgh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ahz-sg-Lgh">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,6 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="a8h-nF-t5S"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Lpq-Gs-L5i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -32,19 +34,114 @@
                         <viewControllerLayoutGuide type="bottom" id="p79-Gi-acW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZxP-Mm-rmP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fgi-v6-sYs">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="171" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fgi-v6-sYs">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Rh4-tm-A5U">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="120" id="Rh4-tm-A5U" customClass="MainViewTableViewCell" customModule="kursu" customModuleProvider="target">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rh4-tm-A5U" id="4zV-8B-EKV">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5md-gp-EQ3">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="280" id="Ujp-SW-xSX"/>
+                                                        <constraint firstAttribute="height" constant="33" id="Z11-D0-feY"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="Ujp-SW-xSX"/>
+                                                            <exclude reference="Z11-D0-feY"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="Ujp-SW-xSX"/>
+                                                            <include reference="Z11-D0-feY"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZI-m7-flf">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="I9J-Gh-hbW"/>
+                                                        <constraint firstAttribute="width" constant="112" id="uyV-qt-dLi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="I9J-Gh-hbW"/>
+                                                            <exclude reference="uyV-qt-dLi"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="I9J-Gh-hbW"/>
+                                                            <include reference="uyV-qt-dLi"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IZI-m7-flf" firstAttribute="top" secondItem="5md-gp-EQ3" secondAttribute="bottom" id="0es-3N-akD"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5md-gp-EQ3" secondAttribute="trailing" constant="99" id="2zJ-M6-YZR"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="IZI-m7-flf" secondAttribute="bottom" constant="60.5" id="Es0-EH-zAQ"/>
+                                                <constraint firstItem="IZI-m7-flf" firstAttribute="leading" secondItem="4zV-8B-EKV" secondAttribute="leadingMargin" constant="5" id="HUN-1b-3Co"/>
+                                                <constraint firstItem="IZI-m7-flf" firstAttribute="top" secondItem="5md-gp-EQ3" secondAttribute="bottom" id="cQ2-DS-Ddq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="IZI-m7-flf" secondAttribute="trailing" constant="267" id="laf-2U-Asx"/>
+                                                <constraint firstItem="5md-gp-EQ3" firstAttribute="leading" secondItem="4zV-8B-EKV" secondAttribute="leadingMargin" constant="5" id="sXC-EE-CxD"/>
+                                                <constraint firstItem="5md-gp-EQ3" firstAttribute="top" secondItem="4zV-8B-EKV" secondAttribute="topMargin" constant="-11" id="uh1-dN-iVP"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="5md-gp-EQ3"/>
+                                                    <exclude reference="IZI-m7-flf"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="2zJ-M6-YZR"/>
+                                                    <exclude reference="sXC-EE-CxD"/>
+                                                    <exclude reference="uh1-dN-iVP"/>
+                                                    <exclude reference="0es-3N-akD"/>
+                                                    <exclude reference="Es0-EH-zAQ"/>
+                                                    <exclude reference="HUN-1b-3Co"/>
+                                                    <exclude reference="cQ2-DS-Ddq"/>
+                                                    <exclude reference="laf-2U-Asx"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="5md-gp-EQ3"/>
+                                                    <include reference="IZI-m7-flf"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="2zJ-M6-YZR"/>
+                                                    <include reference="sXC-EE-CxD"/>
+                                                    <include reference="uh1-dN-iVP"/>
+                                                    <include reference="0es-3N-akD"/>
+                                                    <include reference="Es0-EH-zAQ"/>
+                                                    <include reference="HUN-1b-3Co"/>
+                                                    <include reference="cQ2-DS-Ddq"/>
+                                                    <include reference="laf-2U-Asx"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="distanceLabel" destination="IZI-m7-flf" id="AOg-aN-wdu"/>
+                                            <outlet property="titleLabel" destination="5md-gp-EQ3" id="rf7-ui-HVq"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <sections/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="117" width="400" height="634"/>
                                 </variation>
