@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74CE53901CED9AC4007AD826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CE538F1CED9AC4007AD826 /* AppDelegate.swift */; };
+		74CE53921CED9AC4007AD826 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CE53911CED9AC4007AD826 /* ViewController.swift */; };
+		74CE53951CED9AC4007AD826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CE53931CED9AC4007AD826 /* Main.storyboard */; };
+		74CE53971CED9AC4007AD826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CE53961CED9AC4007AD826 /* Assets.xcassets */; };
+		74CE539A1CED9AC4007AD826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CE53981CED9AC4007AD826 /* LaunchScreen.storyboard */; };
+		74CE53A51CED9AC5007AD826 /* kursuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CE53A41CED9AC5007AD826 /* kursuTests.swift */; };
+		74CE53B01CED9AC5007AD826 /* kursuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CE53AF1CED9AC5007AD826 /* kursuUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74CE53A11CED9AC5007AD826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74CE53841CED9AC4007AD826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74CE538B1CED9AC4007AD826;
+			remoteInfo = kursu;
+		};
+		74CE53AC1CED9AC5007AD826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74CE53841CED9AC4007AD826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74CE538B1CED9AC4007AD826;
+			remoteInfo = kursu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		74CE538C1CED9AC4007AD826 /* kursu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kursu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CE538F1CED9AC4007AD826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74CE53911CED9AC4007AD826 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74CE53941CED9AC4007AD826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74CE53961CED9AC4007AD826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74CE53991CED9AC4007AD826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74CE539B1CED9AC4007AD826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74CE53A01CED9AC5007AD826 /* kursuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kursuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CE53A41CED9AC5007AD826 /* kursuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kursuTests.swift; sourceTree = "<group>"; };
+		74CE53A61CED9AC5007AD826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74CE53AB1CED9AC5007AD826 /* kursuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kursuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CE53AF1CED9AC5007AD826 /* kursuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kursuUITests.swift; sourceTree = "<group>"; };
+		74CE53B11CED9AC5007AD826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74CE53891CED9AC4007AD826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CE539D1CED9AC5007AD826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CE53A81CED9AC5007AD826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74CE53831CED9AC4007AD826 = {
+			isa = PBXGroup;
+			children = (
+				74CE538E1CED9AC4007AD826 /* kursu */,
+				74CE53A31CED9AC5007AD826 /* kursuTests */,
+				74CE53AE1CED9AC5007AD826 /* kursuUITests */,
+				74CE538D1CED9AC4007AD826 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74CE538D1CED9AC4007AD826 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74CE538C1CED9AC4007AD826 /* kursu.app */,
+				74CE53A01CED9AC5007AD826 /* kursuTests.xctest */,
+				74CE53AB1CED9AC5007AD826 /* kursuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74CE538E1CED9AC4007AD826 /* kursu */ = {
+			isa = PBXGroup;
+			children = (
+				74CE538F1CED9AC4007AD826 /* AppDelegate.swift */,
+				74CE53911CED9AC4007AD826 /* ViewController.swift */,
+				74CE53931CED9AC4007AD826 /* Main.storyboard */,
+				74CE53961CED9AC4007AD826 /* Assets.xcassets */,
+				74CE53981CED9AC4007AD826 /* LaunchScreen.storyboard */,
+				74CE539B1CED9AC4007AD826 /* Info.plist */,
+			);
+			path = kursu;
+			sourceTree = "<group>";
+		};
+		74CE53A31CED9AC5007AD826 /* kursuTests */ = {
+			isa = PBXGroup;
+			children = (
+				74CE53A41CED9AC5007AD826 /* kursuTests.swift */,
+				74CE53A61CED9AC5007AD826 /* Info.plist */,
+			);
+			path = kursuTests;
+			sourceTree = "<group>";
+		};
+		74CE53AE1CED9AC5007AD826 /* kursuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				74CE53AF1CED9AC5007AD826 /* kursuUITests.swift */,
+				74CE53B11CED9AC5007AD826 /* Info.plist */,
+			);
+			path = kursuUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74CE538B1CED9AC4007AD826 /* kursu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74CE53B41CED9AC5007AD826 /* Build configuration list for PBXNativeTarget "kursu" */;
+			buildPhases = (
+				74CE53881CED9AC4007AD826 /* Sources */,
+				74CE53891CED9AC4007AD826 /* Frameworks */,
+				74CE538A1CED9AC4007AD826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kursu;
+			productName = kursu;
+			productReference = 74CE538C1CED9AC4007AD826 /* kursu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74CE539F1CED9AC5007AD826 /* kursuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74CE53B71CED9AC5007AD826 /* Build configuration list for PBXNativeTarget "kursuTests" */;
+			buildPhases = (
+				74CE539C1CED9AC5007AD826 /* Sources */,
+				74CE539D1CED9AC5007AD826 /* Frameworks */,
+				74CE539E1CED9AC5007AD826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74CE53A21CED9AC5007AD826 /* PBXTargetDependency */,
+			);
+			name = kursuTests;
+			productName = kursuTests;
+			productReference = 74CE53A01CED9AC5007AD826 /* kursuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		74CE53AA1CED9AC5007AD826 /* kursuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74CE53BA1CED9AC5007AD826 /* Build configuration list for PBXNativeTarget "kursuUITests" */;
+			buildPhases = (
+				74CE53A71CED9AC5007AD826 /* Sources */,
+				74CE53A81CED9AC5007AD826 /* Frameworks */,
+				74CE53A91CED9AC5007AD826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74CE53AD1CED9AC5007AD826 /* PBXTargetDependency */,
+			);
+			name = kursuUITests;
+			productName = kursuUITests;
+			productReference = 74CE53AB1CED9AC5007AD826 /* kursuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74CE53841CED9AC4007AD826 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = PanamaDonne;
+				TargetAttributes = {
+					74CE538B1CED9AC4007AD826 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					74CE539F1CED9AC5007AD826 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 74CE538B1CED9AC4007AD826;
+					};
+					74CE53AA1CED9AC5007AD826 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 74CE538B1CED9AC4007AD826;
+					};
+				};
+			};
+			buildConfigurationList = 74CE53871CED9AC4007AD826 /* Build configuration list for PBXProject "kursu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74CE53831CED9AC4007AD826;
+			productRefGroup = 74CE538D1CED9AC4007AD826 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74CE538B1CED9AC4007AD826 /* kursu */,
+				74CE539F1CED9AC5007AD826 /* kursuTests */,
+				74CE53AA1CED9AC5007AD826 /* kursuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74CE538A1CED9AC4007AD826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CE539A1CED9AC4007AD826 /* LaunchScreen.storyboard in Resources */,
+				74CE53971CED9AC4007AD826 /* Assets.xcassets in Resources */,
+				74CE53951CED9AC4007AD826 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CE539E1CED9AC5007AD826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CE53A91CED9AC5007AD826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74CE53881CED9AC4007AD826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CE53921CED9AC4007AD826 /* ViewController.swift in Sources */,
+				74CE53901CED9AC4007AD826 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CE539C1CED9AC5007AD826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CE53A51CED9AC5007AD826 /* kursuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CE53A71CED9AC5007AD826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CE53B01CED9AC5007AD826 /* kursuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74CE53A21CED9AC5007AD826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74CE538B1CED9AC4007AD826 /* kursu */;
+			targetProxy = 74CE53A11CED9AC5007AD826 /* PBXContainerItemProxy */;
+		};
+		74CE53AD1CED9AC5007AD826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74CE538B1CED9AC4007AD826 /* kursu */;
+			targetProxy = 74CE53AC1CED9AC5007AD826 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74CE53931CED9AC4007AD826 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74CE53941CED9AC4007AD826 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74CE53981CED9AC4007AD826 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74CE53991CED9AC4007AD826 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74CE53B21CED9AC5007AD826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74CE53B31CED9AC5007AD826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74CE53B51CED9AC5007AD826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = kursu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panamadonne.kursu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		74CE53B61CED9AC5007AD826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = kursu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panamadonne.kursu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		74CE53B81CED9AC5007AD826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = kursuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panamadonne.kursuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kursu.app/kursu";
+			};
+			name = Debug;
+		};
+		74CE53B91CED9AC5007AD826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = kursuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panamadonne.kursuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kursu.app/kursu";
+			};
+			name = Release;
+		};
+		74CE53BB1CED9AC5007AD826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = kursuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panamadonne.kursuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = kursu;
+			};
+			name = Debug;
+		};
+		74CE53BC1CED9AC5007AD826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = kursuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panamadonne.kursuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = kursu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74CE53871CED9AC4007AD826 /* Build configuration list for PBXProject "kursu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74CE53B21CED9AC5007AD826 /* Debug */,
+				74CE53B31CED9AC5007AD826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74CE53B41CED9AC5007AD826 /* Build configuration list for PBXNativeTarget "kursu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74CE53B51CED9AC5007AD826 /* Debug */,
+				74CE53B61CED9AC5007AD826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		74CE53B71CED9AC5007AD826 /* Build configuration list for PBXNativeTarget "kursuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74CE53B81CED9AC5007AD826 /* Debug */,
+				74CE53B91CED9AC5007AD826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		74CE53BA1CED9AC5007AD826 /* Build configuration list for PBXNativeTarget "kursuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74CE53BB1CED9AC5007AD826 /* Debug */,
+				74CE53BC1CED9AC5007AD826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74CE53841CED9AC4007AD826 /* Project object */;
+}
