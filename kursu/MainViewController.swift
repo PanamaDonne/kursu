@@ -48,9 +48,4 @@ extension MainViewController: UITableViewDataSource {
         return 1
     }
 
-    func tableView(tableView:UITableView, heightForRowAtIndexPath indexPath:NSIndexPath)->CGFloat {
-        return 80
-    }
-
-
 }
