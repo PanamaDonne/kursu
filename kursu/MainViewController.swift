@@ -15,7 +15,11 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let backendless = Backendless.sharedInstance()
+        let user: BackendlessUser = BackendlessUser()
+        user.email = "createdbydaniel@gmail.com"
+        user.password = "donne123"
+        backendless.userService.registering(user)
     }
 
     override func didReceiveMemoryWarning() {
