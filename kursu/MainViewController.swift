@@ -59,6 +59,11 @@ extension MainViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! MainViewTableViewCell
 
+        let label = coursesArr.objectAtIndex(indexPath.row)
+
+        cell.titleLabel.text = label.name
+        
+
         return cell
     }
 

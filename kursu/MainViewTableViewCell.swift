@@ -15,10 +15,6 @@ class MainViewTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        titleLabel.text = "Title Label"
-        distanceLabel.text = "500m"
-
-
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
