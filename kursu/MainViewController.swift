@@ -11,32 +11,52 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
+    var coursesArr: NSMutableArray = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let backendless = Backendless.sharedInstance()
-        let user: BackendlessUser = BackendlessUser()
-        user.email = "createdbydaniel@gmail.com"
-        user.password = "donne123"
-        backendless.userService.registering(user)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+
+    func fetchingFirstPageAsync() {
+
+        let startTime = NSDate()
+        let query = BackendlessDataQuery()
+        let backendless = Backendless()
+
+        backendless.persistenceService.of(Course.ofClass()).find(
+            query,
+            response: { ( courses : BackendlessCollection!) -> () in
+                let currentPage = courses.getCurrentPage()
+
+                for course in currentPage as! [Course] {
+                    print("Course name = \(course.name)")
+                    self.coursesArr.addObject(course)
+                }
+
+                print("Total time (ms) - \(1000*NSDate().timeIntervalSinceDate(startTime))")
+            },
+            error: { ( fault : Fault!) -> () in
+                print("Server reported an error: \(fault)")
+            }
+        )
+    }
+
 }
 
 
 extension MainViewController: UITableViewDelegate {
 
-
-
 }
 
 extension MainViewController: UITableViewDataSource {
+
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! MainViewTableViewCell
