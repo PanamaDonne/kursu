@@ -16,6 +16,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        fetchData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,28 +25,25 @@ class MainViewController: UIViewController {
     }
 
 
-    func fetchingFirstPageAsync() {
-
-        let startTime = NSDate()
-        let query = BackendlessDataQuery()
+    func fetchData () {
+        let dataQuery = BackendlessDataQuery()
         let backendless = Backendless()
+        var error: Fault?
+        let bc = backendless.data.of(Course.ofClass()).find(dataQuery, fault: &error)
 
-        backendless.persistenceService.of(Course.ofClass()).find(
-            query,
-            response: { ( courses : BackendlessCollection!) -> () in
-                let currentPage = courses.getCurrentPage()
-
-                for course in currentPage as! [Course] {
-                    print("Course name = \(course.name)")
-                    self.coursesArr.addObject(course)
-                }
-
-                print("Total time (ms) - \(1000*NSDate().timeIntervalSinceDate(startTime))")
-            },
-            error: { ( fault : Fault!) -> () in
-                print("Server reported an error: \(fault)")
+        if error == nil {
+            if coursesArr.count > 0 {
+                coursesArr.removeAllObjects()
             }
-        )
+
+            for course in bc.data {
+                coursesArr.addObject(course)
+            }
+            self.tableView.reloadData()
+        }
+        else {
+            print("Server reported an error: \(error)")
+        }
     }
 
 }
@@ -65,7 +63,8 @@ extension MainViewController: UITableViewDataSource {
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return coursesArr.count
+
     }
 
     func numberOfSectionsInTableView(tableview: UITableView) -> Int {
